@@ -7,7 +7,7 @@ html, body{
 }
 body{
     background-color: hsl(204, 43%, 93%)
-    
+    /*Align the content in the center   */
 }
  .main{
         display:grid ;
@@ -15,10 +15,11 @@ body{
         width: 100%;
         justify-content: center;
         align-content: center;
-        
+            
     
         
 } 
+/* Borders, bordre shadow, grid settins, grid size */
 .conteiner{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -33,9 +34,11 @@ body{
         overflow: hidden;
         box-shadow: 0 5px 10px 0 rgba(59, 141, 218, 0.19),
         0 20px 20px 0 rgba(59, 141, 218, 0.19);
-        ;
+        font-family: karla;
+        font-size: 16px;
         
 }
+/* join settings=========================== */
 .join {
 
 
@@ -43,31 +46,114 @@ body{
     /* height: 30vh; */
     background-color: white;
     grid-area: join;
+    padding-left: 2rem;
     
 }
+.join p{
+    color: hsl(218, 22%, 67%);
+    font-size: 14px;
+}
+.join h3{
+    color: hsl(71, 73%, 54%);
+}
+.join h1{
+    color: hsl(179, 62%, 43%);
+}
+/* why settings========================== */
 .why{
 
 
     /* border: 1px solid white; */
     /* height: 20vh; */
-    background-color: darkcyan;
+    background-color: hsla(179, 62%, 43%, 0.836);
     grid-area: why;
+    /* text-align:justify ; */
+    padding-left: 2rem;
+    color: hsl(204, 43%, 93%);
 }
+.why p{
+    font-size: 0.8rem;
+    color: hsla(203, 44%, 93%, 0.87)
+}
+/* signup settings=========================== */
 .signup{
     
-    /* border: 1px solid white; */
-    /* height: 20vh; */
+ 
     background-color: hsl(179, 62%, 43%);
     grid-area: signup;
+    color: hsl(204, 43%, 93%);
+    padding-left: 2rem;
     
-
     
 }
 .signup a{
     background-color: hsl(71, 73%, 54%);
     padding: 2vh 10vh;
-    color: white;
-    /* text-align: center; */
+    
+    color: hsl(204, 43%, 93%);
+   
     border-radius: 0.2rem;
     margin: 0 1rem 0 1rem;
+    text-decoration: none;
+}
+
+.signup a:hover{
+    background-color: hsl(71, 100%, 37%);
+}
+.price{
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+.less{
+    font-size: 15px;
+}
+
+
+@media (max-width: 1440px){
+    .main{
+        width: 90%
+    }
+}
+@media(max-width: 375px){
+    .main{
+        width: 90%;
+    }
+    .conteiner {
+        width: 90%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "join "
+                                        "signup "
+                                        "why";
+        grid-template-rows: 40vh 33vh 45vh;
+    }
+    .join {
+
+
+        width: 90%;
+        font-size: 16px;
+        grid-area: join;
+
+
+    }
+    .why {
+
+
+       width: 90%;
+        font-size: 16px;
+        grid-area: why;
+
+    }
+    .signup {
+
+        width: 90%;
+        grid-area: signup;
+
+
+
+    }
+    
 }
