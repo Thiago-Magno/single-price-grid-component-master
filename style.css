@@ -101,9 +101,16 @@ body{
     background-color: hsl(71, 100%, 37%);
 }
 .price{
+    display: inline;
     font-size: 30px;
-    white-space: nowrap;
+    white-space: nowrap;    
 }
+.price >div{
+    display: inline;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.418)
+}
+
 
 .less{
     font-size: 15px;
