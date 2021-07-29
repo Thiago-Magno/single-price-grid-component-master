@@ -2,17 +2,16 @@ html, body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    width: 100%;
-    height: 100%;
+
 }
 body{
     background-color: hsl(204, 43%, 93%)
     /*Align the content in the center   */
 }
  .main{
-        display:grid ;
-        height: 100%;
-        width: 100%;
+        display:flex ;
+        height: 100vh;
+        width: 100vw;
         justify-content: center;
         align-content: center;
             
@@ -46,12 +45,13 @@ body{
     /* height: 30vh; */
     background-color: white;
     grid-area: join;
-    padding-left: 2rem;
+    padding: 0 0 2rem 2rem;
     
 }
 .join p{
     color: hsl(218, 22%, 67%);
     font-size: 14px;
+    ;
 }
 .join h3{
     color: hsl(71, 73%, 54%);
@@ -88,13 +88,13 @@ body{
 }
 .signup a{
     background-color: hsl(71, 73%, 54%);
-    padding: 2vh 10vh;
-    
+    padding: 0.5rem 4rem;
     color: hsl(204, 43%, 93%);
-   
     border-radius: 0.2rem;
     margin: 0 1rem 0 1rem;
     text-decoration: none;
+    justify-content: center;
+    align-content: center;
 }
 
 .signup a:hover{
@@ -116,6 +116,9 @@ body{
     font-size: 15px;
 }
 
+footer{
+    padding: 3rem ;
+}
 
 @media (max-width: 1440px){
     .main{
