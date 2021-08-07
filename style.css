@@ -1,43 +1,48 @@
-html, body{
+html,
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 
 }
-body{
+
+body {
     background-color: hsl(204, 43%, 93%)
-    /*Align the content in the center   */
+        /*Align the content in the center   */
 }
- .main{
-        display:flex ;
-        height: 100vh;
-        width: 100vw;
-        justify-content: center;
-        /* align-content: center; */
-        align-items: center;
-            
-    
-        
-} 
+
+.main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center;
+
+
+
+}
+
 /* Borders, bordre shadow, grid settins, grid size */
-.conteiner{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "join join"
+.conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "join join"
         "signup why";
-        grid-template-rows: 28vh 50vh 50vh;
-        border: 1px solid rgba(172, 172, 172, 0.192);
-        border-radius: 0.8rem;
-        height: 60vh;
-        width: 82vh;       
-        overflow: hidden;
-        box-shadow: 0 5px 10px 0 rgba(59, 141, 218, 0.19),
+    grid-template-rows: 28vh 50vh 50vh;
+    border: 1px solid rgba(172, 172, 172, 0.192);
+    border-radius: 0.8rem;
+    height: 60vh;
+    width: 82vh;
+    overflow: hidden;
+    box-shadow: 0 5px 10px 0 rgba(59, 141, 218, 0.19),
         0 20px 20px 0 rgba(59, 141, 218, 0.19);
-        font-family: karla;
-        font-size: 16px;
-        
+    font-family: karla;
+    font-size: 16px;
+
 }
+
 /* join settings=========================== */
 .join {
 
@@ -47,21 +52,25 @@ body{
     background-color: white;
     grid-area: join;
     padding: 0 0 2rem 2rem;
-    
+
 }
-.join p{
+
+.join p {
     color: hsl(218, 22%, 67%);
     font-size: 14px;
     ;
 }
-.join h3{
+
+.join h2 {
     color: hsl(71, 73%, 54%);
 }
-.join h1{
+
+.join h1 {
     color: hsl(179, 62%, 43%);
 }
+
 /* why settings========================== */
-.why{
+.why {
 
 
     /* border: 1px solid white; */
@@ -72,22 +81,25 @@ body{
     padding-left: 2rem;
     color: hsl(204, 43%, 93%);
 }
-.why p{
+
+.why p {
     font-size: 0.8rem;
     color: hsla(203, 44%, 93%, 0.87)
 }
+
 /* signup settings=========================== */
-.signup{
-    
- 
+.signup {
+
+
     background-color: hsl(179, 62%, 43%);
     grid-area: signup;
     color: hsl(204, 43%, 93%);
     padding-left: 2rem;
-    
-    
+
+
 }
-.signup a{
+
+.signup a {
     background-color: hsl(71, 73%, 54%);
     padding: 0.5rem 4rem;
     color: hsl(204, 43%, 93%);
@@ -98,49 +110,54 @@ body{
     align-content: center;
 }
 
-.signup a:hover{
+.signup a:hover {
     background-color: hsl(71, 100%, 37%);
 }
-.price{
+
+.price {
     display: inline;
     font-size: 30px;
-    white-space: nowrap;    
+    white-space: nowrap;
 }
-.price >div{
+
+.price>div {
     display: inline;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.418)
 }
 
 
-.less{
+.less {
     font-size: 15px;
 }
 
-footer{
-    padding: 3rem ;
+footer {
+    padding: 3rem;
 }
 
-@media (max-width: 1440px){
-    .main{
+@media (max-width: 1440px) {
+    .main {
         width: 90%
     }
 }
-@media(max-width: 375px){
-    .main{
+
+@media(max-width: 375px) {
+    .main {
         width: 90%;
     }
+
     .conteiner {
         width: 90%;
         height: 100%;
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: "join "
-                                        "signup "
-                                        "why";
+            "signup "
+            "why";
         grid-template-rows: 40vh 33vh 45vh;
     }
+
     .join {
 
 
@@ -150,14 +167,16 @@ footer{
 
 
     }
+
     .why {
 
 
-       width: 90%;
+        width: 90%;
         font-size: 16px;
         grid-area: why;
 
     }
+
     .signup {
 
         width: 90%;
@@ -166,5 +185,5 @@ footer{
 
 
     }
-    
+
 }
